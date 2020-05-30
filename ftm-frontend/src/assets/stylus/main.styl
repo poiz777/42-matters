@@ -1,0 +1,105 @@
+body
+  margin: 0
+  background-color: #000
+
+  .ftm-title-bar
+    h1
+      color: black
+      font-size: 5em
+      font-family: sans-serif
+      text-align: center
+      font-weight: 200
+      text-transform uppercase
+
+    .ftm-sub-title
+      text-align: center
+      border-top: dashed #c7254e 1px
+      border-bottom: dashed #c7254e 1px
+      padding:5px 10px
+
+  .ftm-side-bar,
+  .ftm-main-panel
+    min-height: 400px
+    max-height: 400px
+    overflow-y: auto
+    background: white
+    padding-top: 20px
+    padding-bottom: 20px
+
+
+  .ftm-side-bar
+    input
+      &+.ftm-search-icon
+        position: absolute
+        left: 50px
+        top: 16px
+        font-size: 20px
+        z-index: 10
+        cursor: pointer
+
+      &[type=search].ftm-search-box,
+      &[type=search].ftm-input.ftm-search-box
+        display: inline-block
+        padding-left: 32px
+        width: 85%
+
+      &[type=radio].ftm-radio,
+      &[type=radio].ftm-input.ftm-radio,
+      &[type=checkbox].ftm-radio
+        display: inline-block
+        margin: 7px 10px 0 0
+
+    .ftm-radio-label
+      display: inline-block
+      font-weight: normal
+
+  .ftm-main-panel
+    .ftm-2-cols
+      .ftm-sdk-block
+        padding: 15px
+        background: rgba(241, 241, 241, 0.8)
+        min-height: 170px
+        margin-bottom: 20px
+        border-radius: 10px
+        box-shadow: 0 1px 2px 1px rgba(0,0,0,0.4)
+
+    .ftm-entity-title
+      margin-top: 0
+      margin-bottom: 10px
+      color: #616161
+      font-weight: 300
+      letter-spacing: 0.02em
+
+    .ftm-sdk-id
+      display: inline-block
+      padding:2px 0
+      border-top: dashed 1px
+      border-bottom: dashed 1px
+      color: #616161
+      font-weight: 300
+      letter-spacing: 0.02em
+      .ftm-id-value
+        color: #4e000c
+
+
+    .ftm-clear
+      min-height 1px
+      margin-top: 8px
+
+    .ftm-entity-tags
+      display: inline-block
+      padding-right: 10px
+
+      & .ftm-badge
+        padding: 7px 10px
+        border-radius: 20px
+        background-color: #d4d4d4
+        color: #000058
+        font-weight: normal
+        margin-bottom: 8px
+        min-width: 155px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3)
+
+.ftm-emphasis
+  color:darkgreen
+  font-weight: 500

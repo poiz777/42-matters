@@ -1,0 +1,112 @@
+{
+  "name": "42-matters",
+  "version": "1.0.0",
+  "description": "Solution to «42 Matters» FullStack Developer Assignment using AngularJS 1.6",
+  "keywords": [
+    "42 Matters",
+    "Angular",
+    "AngularJS v.1.6.x",
+    "Assignment",
+    "Stylus",
+    "Pug",
+    "Poiz",
+    "FullStack",
+    "Webpack"
+  ],
+  "author": "Poiz Campbell <poizcampbell777@gmail.com> (http://poiz.me)",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
+    "start": "nodemon --inspect --watch config --watch src/server src/server/main.js"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jasmine": true,
+      "node": true
+    },
+    "plugins": [
+      "angular"
+    ],
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "import/no-unresolved": 1,
+      "global-require": 0,
+      "prefer-template": 1,
+      "max-len": [
+        "error",
+        80
+      ],
+      "no-use-before-define": 0,
+      "new-cap": 0,
+      "no-param-reassign": 1,
+      "no-nested-ternary": 1,
+      "import/no-extraneous-dependencies": 0
+    },
+    "globals": {
+      "angular": true
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "@babel/runtime": "^7.9.6",
+    "angular": "1.6.x",
+    "angular-animate": "1.6.x",
+    "angular-route": "1.6.x",
+    "angular-sanitize": "1.6.x",
+    "angular-ui-router": "^1.0.26",
+    "bootstrap": "^3.4.1",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fibers": "^5.0.0",
+    "font-awesome": "^4.7.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "apply-loader": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "extract-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "json-loader": "^0.5.4",
+    "ng-annotate-loader": "^0.2.0",
+    "ng-annotate-webpack-plugin": "^0.2.1-pre",
+    "node-sass": "*",
+    "nodemon":"^2.0.4",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "rimraf": "*",
+    "sass": "^0.5.0",
+    "style-loader": "^1.2.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "*",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0"
+  }
+}

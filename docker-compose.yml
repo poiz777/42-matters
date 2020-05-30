@@ -1,0 +1,22 @@
+version: "3"
+services:
+  backend:
+    container_name: "fmt-backend"
+    build: "./ftm-backend"
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./ftm-backend:/app"
+      # - type: 'bind'
+      #   source: './ftm-backend'
+      #   target: '/app'
+  frontend:
+    container_name: "fmt-frontend"
+    build: "./ftm-frontend"
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./ftm-frontend/src:/app/src"
+      # - type: 'bind'
+      #   source: './ftm-frontend/src'
+      #   target: '/app/src'

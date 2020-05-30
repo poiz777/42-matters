@@ -1,0 +1,21 @@
+{
+    "name": "poiz/42-matters-test",
+    "description": "Fullstack Developer Test for 42 Matters",
+    "require": {
+        "jacwright/restserver": "^1.2"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeBox\\Poiz\\": "CodeBox/Poiz"
+        }
+    },
+    "authors": [
+        {
+            "name": "Poiz I Am",
+            "email": "seesolutionz@gmail.com"
+        }
+    ]
+}

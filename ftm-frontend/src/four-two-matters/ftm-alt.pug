@@ -1,0 +1,47 @@
+div.container
+    div.well.ftm-title-bar
+        h1 {{pageTitle}}
+        aside.ftm-sub-title
+            code { {{subTitle}} }
+
+    div.row
+        div.col-md-12
+            div.col-md-3.ftm-side-bar
+                ul.list-group.list-unstyled
+                    li.list-group-item
+                        input(type='radio'
+                            name='data_tag'
+                            class='ftm-input ftm-radio'
+                            ng-value="'filtered'"
+                            id='tag-filtered'
+                            ng-model="objModel.tag"
+                            ng-change="filterDataByTag()")
+                        input.form-control.ftm-input.ftm-search-box(type='search' ng-model="objModel.text" name='search_term' ng-change="filterDataByInputTextTag()")
+                        span.fa.fa-search.ftm-search-icon
+
+                    li.list-group-item
+                        input(type='radio'
+                            name='data_tag'
+                            class='ftm-input ftm-radio'
+                            ng-value="'all'"
+                            id='tag-all'
+                            ng-model="objModel.tag"
+                            ng-change="filterDataByTag()")
+                        label.ftm-radio-label(for='tag-all') All
+
+                    li.list-group-item(ng-repeat="(key, tag) in tags")
+                        input(type='radio'
+                            name='data_tag'
+                            class='ftm-input ftm-radio'
+                            id='tag-{{key}}'
+                            key="{{ key }}"
+                            ng-value="'{{tag}}'"
+                            ng-model="objModel.tag"
+                            ng-change="filterDataByTag()")
+                        label.ftm-radio-label(for='tag-{{key}}') {{tag}}
+
+            div.col-md-9.ftm-main-panel
+                ul.list-group.list-unstyled
+                    li.list-group-item(ng-repeat="obj in allData")
+                        h3.ftm-entity-title {{obj.title}}
+                        span.ftm-entity-tags(ng-repeat="(iKey, sTag) in obj.tags") <span class='badge ftm-badge'><span class='fa fa-tag ftm-badge-icon'></span> {{ sTag }}</span>
