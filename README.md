@@ -48,8 +48,4 @@ From there on, you can interact with the Application to see if all the necessary
 
 ## Screenshots
 
-<<<<<<< HEAD
 ![alt](https://github.com/poiz777/42-matters/blob/master/docker-screen-shot-01.jpg)
-=======
-![alt](./docker-screen-shot-01.png)
->>>>>>> 04c82759fa5be87aba11134a0479a06d62d81979
