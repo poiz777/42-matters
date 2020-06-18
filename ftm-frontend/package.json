@@ -58,7 +58,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "@babel/runtime": "^7.9.6",
-    "angular": "1.6.x",
+    "angular": "1.8.x",
     "angular-animate": "1.6.x",
     "angular-route": "1.6.x",
     "angular-sanitize": "1.6.x",
