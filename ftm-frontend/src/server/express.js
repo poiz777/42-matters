@@ -19,7 +19,7 @@ server.use(wpkDevMiddleWare);
 server.use(wpkHotMiddleWare);
 server.use(staticMiddleWare);
 
-const port              = 8080; // <= CHANGE THIS VALUE TO CHANGE THE PORT.
+const port              = 8090; // <= CHANGE THIS VALUE TO CHANGE THE PORT.
 server.listen(port, () => {
   console.log(`\n\nServer is listening.\nVisit http://localhost:${port}\n\n`);
 });
