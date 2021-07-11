@@ -2,10 +2,10 @@
     "name": "poiz/42-matters-test",
     "description": "Fullstack Developer Test for 42 Matters",
     "require": {
-        "jacwright/restserver": "^1.2"
+        "jacwright/restserver": "*"
     },
     "require-dev": {
-        "symfony/var-dumper": "^5.0"
+        "symfony/var-dumper": "*"
     },
     "autoload": {
         "psr-4": {
